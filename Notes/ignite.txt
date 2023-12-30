@@ -1,0 +1,38 @@
+Lot of packages makes our code fast, not just react
+We need to get those packages into our app
+
+Install node package manager
+NPM - package manager where all packages are hosted
+Takes care of all packages and its versions
+
+Bundlers - bundles your app which will help in ship to production - Parcel, Webpack
+
+// npm install -D Parcel (-D dev dependancy)
+2 types of packages , dev dependancy and normal dependancy
+
+"devDependencies": {
+    "parcel": "^2.10.3" // ^ = caret -> parcel will update its version with this symbol 
+  }
+
+  package.json - keeps track of approx version
+  and package-lock.json- keeps track of exact version
+
+node-modules is not required in github
+
+package.json and package-lock.json is requred in github
+
+
+NPX - executing a package
+npx parcel index.html
+
+CDN is not a good way to add react into our project
+
+No need of script tag to import react in index.html
+after import add type module in html file
+
+Parcel -
+-Dev build
+-Local Server
+-HMR - Hot Module replacement(Automatically replaces our page)
+-File Watching algorithm- written in C++ 
+-Faster Builds - Caching
