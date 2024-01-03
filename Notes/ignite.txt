@@ -36,3 +36,18 @@ Parcel -
 -HMR - Hot Module replacement(Automatically replaces our page)
 -File Watching algorithm- written in C++ 
 -Faster Builds - Caching
+-Image Optimization
+-Minification of file
+-Compress
+-Consistent Hashing
+-Code Splitting
+-Differential bundling
+-Doagnistic
+-Error handling
+-HTTPs
+-Tree Shaking - Remove Unused code
+
+for prod - npx parcel build index.html
+remove app.js
+
+

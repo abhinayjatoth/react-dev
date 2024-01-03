@@ -1,0 +1,30 @@
+JSX
+
+1. JSX is HTML like syntax. Not html inside javascript
+2. JSX code is transpiled before it reaches to JS Engineby Parcel - Babel
+3. Instead of class you give className
+4. Attributed in JSX is camel case
+5. JSX can be written in single line. For multiple lines code needs to be wrapped in brackets
+6. In JSX if we wirte a curly braces, we can run any javascript code inside curly braces
+
+React Component
+
+1. Class based components - Old way of writing code
+2. Functional Components - New way
+
+React Functional component - normal javascript function
+
+1. Name it with capital letter
+2. Returns some JSX
+
+How to render React Component unlike react Element
+root.render(<HeadingComponent/>);
+render one component inside another
+
+Component Composition:
+Component inside a component
+
+Adding element inside Component
+we can run any javascript code inside curly braces of JSX. Even console log works
+
+Our code is readable because of JSX. Writing React and creating elements with react is complex/messy
