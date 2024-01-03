@@ -1,0 +1,9 @@
+Props- Properties
+When you want to dynamically pass data to a component, you pass it as a prop
+
+Config Friven UI?
+
+Give key when loop over children
+We do not use index as a key
+
+Not using keys(not acceptable <<<<<< Index as key(not recommended) <<<<<<< Unique Id(Recommended)
