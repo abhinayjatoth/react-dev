@@ -6,4 +6,50 @@ Config Friven UI?
 Give key when loop over children
 We do not use index as a key
 
-Not using keys(not acceptable <<<<<< Index as key(not recommended) <<<<<<< Unique Id(Recommended)
+- Not using keys(not acceptable <<<<<< Index as key(not recommended) <<<<<<< Unique Id(Recommended)
+- Make seperate files for seperate components
+- React doesn’t have opinions on how you put files into folders. That said there are a few common approaches popular in the ecosystem you may want to consider.
+
+Two types of exports and imports
+
+1. Default Export/Import
+   export detault ComponentName;
+   import ComponentName from "path";
+
+2. Named Export/Import;
+   export cont ComponentName;
+   import ComponentName from "path";
+
+Hooks:
+Normal JS function given by react - comes with some superpowers
+
+- ueState() - Component renderes whenere there is a change in varaible
+- useEffect(() => {},[]//dependanyc aray) - with callback function with a dependancy array
+  If no dependancy array, useEffect is called on every render
+  If there is an empty dependancy array, useEffect is called on only once.
+  If there is a variable declared, it is called everytime dependancy variable is updated
+  Never use useEffect() in if else condition, loops and functions- in documentation. Its only done n componentsand on top
+
+useEffect is called after the body component is rendered
+
+Whenever a state variable is changed, react will re render the whole component
+React Fiber
+Reconciliation Algorithm
+Diff Algorithm
+React is Doing Efficient DOM manipulation
+React Routing So
+
+Routing:
+createBrowserRouter(recommenderd router for react router)
+RouterProvider- router configuration
+
+Dontuse anchor tag when using React - navigate to new page without reloading new page
+Use Link component
+
+
+# 2 Types of Routing
+ - Client Side Routing
+ - Server Side Routing
+
+# Dynamic Routing
+ - 

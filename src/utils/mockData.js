@@ -1,21 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-/**
- * Header
- * - Logo
- * - Nav Items
- * Body
- * - Search
- * - Restro Cards Container
- *   - Restro Cards
- * Footer
- * - Copyright
- * - Links
- * - Address
- * - Contact
- */
-
 const resObj = [
                   {
                     "info": {
@@ -932,66 +914,8 @@ const resObj = [
                       "type": "WEBLINK"
                     },
                     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-                  }
-                ]
+    }
+]             
 
-const styleCard = {
-    backgroundColor : "#f0f0f0"
-}
 
-const Header = () => {
-    return (
-        <div className="header">
-            <div className="logo">
-                <img src="https://www.zarla.com/images/zarla-a-1x1-2400x2400-20211108-w7bd6cjxc33k7y93ct87.png?crop=1:1,smart&width=250&dpr=2" />
-            </div>
-            <div className="nav-items">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-
-    );
-}
-
-const ResturantCard = ({ resData }) => {
-    const {name,cuisines, avgRating, sla } = resData?.info
-    return (
-        <div className="res-card" style={styleCard}>
-            <img className="res-logo" alt="res-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-                resData.info.cloudinaryImageId} />
-            <h3>{name}</h3>
-            <h4>{cuisines.join(", ")}</h4>
-            <h4>{"Rating "+avgRating}</h4>
-            <h4>{"Delivery in "+sla?.deliveryTime+" mins"}</h4> {/* Optional chaining */}
-        </div>
-    );
-}
-
-const Body = () => {
-    return (
-        <div className="body">
-            <div className="search">Search</div>
-            <div className="res-container">
-                {resObj.map((resturant) => (
-                    <ResturantCard key={resturant.info.id} resData={resturant} />
-                ))}
-            </div>
-        </div>
-    )
-}
-
-const AppLayout = () => {
-    return <div className="app">
-        <Header />
-        <Body/>
-    </div>
-} 
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout/>);
+export default resObj;

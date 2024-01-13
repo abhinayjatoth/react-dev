@@ -1,0 +1,26 @@
+#Parent Component
+-Parent Render
+
+- Child Component
+  -Child Constructor
+  -Child Render
+- Child Component
+  -Child Constructor
+  -Child Render
+
+    <DOM updated in Single Batch>
+
+  - First Child ComponentDidMount
+  - Second Child ComponentDidMount
+
+-Parent Mount
+
+1. Constructor is called
+2. Render is called - Shimmer
+3. componentDidMount is called - API call
+4. this.setState()
+   /_ Mounting cycle is finished_/
+   UPDATE cycle begins
+   -new data render
+   -HTML loaded with API Data
+   -componentDIdUpdate
