@@ -24,3 +24,5 @@
    -new data render
    -HTML loaded with API Data
    -componentDIdUpdate
+
+Check the React Lifecycle diagram for more
