@@ -1,0 +1,21 @@
+- Distribute code into components - smaller parts - modular fashion - reusable, maintainable, testable
+
+Create Hooks in Utils
+
+useResturantMenu
+use useEffect()
+
+
+//Chunking
+//CodeSplitting
+//Dynamic Bundling
+
+Lazy Loading - It is an on demand loading of a component or page. When our bundle js file becomes large,
+ we can split into multiple js and load if cliclked
+
+ Onn demand loading 
+
+ Higher Order components
+
+ Controlled component and uncontrolled component
+ The problem of props
